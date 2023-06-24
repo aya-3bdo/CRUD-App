@@ -83,8 +83,6 @@ switcher.addEventListener("click", () => {
   // ___ //
 });
 
-
-
 /*   _______________________  {calc total price }   5 functions    _________________________ */  
 //  ==>>  Get discount percent.
 function discountPercent (value) {
@@ -337,7 +335,6 @@ function addNewBrandInput() {
   brandInput.style.display = 'none';
   addBrandInput.style.display = 'block';
   if (addBrandInput.value !== '' || null) {
-    // (brandContainer.firstElementChild.tagName === 'SELECT')
     return addBrandInput.value;
   } else {
     return brandInput.value;
@@ -357,7 +354,6 @@ function addNewCategoryInput() {
   categoryContainer.appendChild(addCategoryInput);
   addCategoryInput.setAttribute('placeholder', 'enter category');
   addCategoryInput.id = 'category-input';
-  // categoryContainer.firstElementChild
   addCategoryInput.style.display = 'block';
   if (addCategoryInput.value !== '' || null) {
     return addCategoryInput.value;
@@ -434,19 +430,19 @@ function createData() {
 }
 // ___________________________  End of it  ____________________________ //
 
-
 // _______________________   On reload retrieve the data from localStorage.  _______________________ //
 function retrieveData() {
   let retrievedData = JSON.parse(localStorage.getItem("itemsData"));
-  if (retrievedData.length > 0) {
+  if (localStorage.length > 0 ) {
     for (let obj of retrievedData) {
       itemsStore.push(obj);
-    }
+    };
     return itemsStore;
   } else {
-    return itemsStore;
-  };
-}
+    return 1;
+  }
+};
+
 // ___________________________  End of it  ____________________________ //
 
 
@@ -492,3 +488,5 @@ topBtn.addEventListener('click', () => {
   })
 });
 // ___________________________  End of it  ____________________________ //
+
+  
