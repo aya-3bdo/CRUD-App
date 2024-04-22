@@ -129,7 +129,6 @@
 
             <div class="itemsNumContainer">
               <input
-                onchange="getTotalPrice()"
                 id="itemsNum"
                 type="number"
                 placeholder="Items number"
@@ -147,7 +146,7 @@
 
         <!-- buttons slice-->
         <div class="buttonsSlice">
-          <button id="submit" onclick="createData()">add item</button>
+          <button id="submit">add item</button>
           <button id="clearBtn">delete all</button>
         </div>
 
@@ -157,7 +156,6 @@
             <i class="fa-solid fa-arrow-right-long"></i>
           </div>
           <input
-            onclick="brandArrow(this.id)"
             id="brandSearch"
             type="text"
             placeholder="search by brand "
@@ -167,7 +165,7 @@
             <i class="fa-solid fa-arrow-right-long"></i>
           </div>
           <input
-            onclick="categoryArrow(this.id)"
+          
             id="categorySearch"
             type="text"
             placeholder="search by category"
@@ -212,6 +210,7 @@
       type="text/javascript"
       src="./fontawesome-free-6.2.0-web/js/all.min.js"
     ></script>
-    <script type="text/javascript" src="crud.js"></script>
+    <script type="module" src="getElementsModule.js"></script>
+    <script type="module" src="crud.js"></script>
   </body>
 </html>

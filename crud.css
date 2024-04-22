@@ -96,7 +96,7 @@ th.light-mode {
 td.light-mode {
   color: var(--light-150);
 }
-.tableBtn.light-mode {
+.tableBtn.light-mode, .srch-tableBtn.light-mode {
   background: var(--light-150);
 }
 
@@ -192,8 +192,8 @@ section {
   font-size: 0.855em !important;
   text-transform: capitalize;
   border: 1px solid transparent;
-  border-radius: 1rem;
-  padding: 0.2rem;
+  border-radius: 1em;
+  padding: 0.25em;
   background: hsla(0, 0%, 20%, 0.906);
   cursor: pointer;
 }
@@ -422,13 +422,14 @@ td {
 
 
 /* Buttons "Delete & Update" */
-.tableBtn {
+.tableBtn, .srch-tableBtn {
   color: white;
+  border: 0.12em solid whitesmoke;
   background: var(--light-100);
   font-size: 0.9em;
-  padding: 0.3rem 0.4rem;
+  padding: 0.3rem 0.4em;
   cursor: pointer;
-  border-radius: 0.6rem;
+  border-radius: 0.6em;
   text-transform: capitalize;
 }
 
