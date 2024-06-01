@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  /* background: var(--black-50); */
+  box-sizing: border-box;
 }
 body {
   background: var(--black-50);
@@ -111,7 +111,7 @@ td.light-mode {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  padding: 1%;
+  padding: 2%;
   min-width: 768px;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -295,7 +295,6 @@ input {
 .buttonsSlice {
   width: 90%;
   min-height: 15%;
-  border-radius: 0.5rem;
   padding: 1%;
   margin: 0 0 1.5%;
   display: flex;
@@ -309,6 +308,7 @@ input {
   display: block;
   color: white;
   width: 38%;
+  border: 1px solid transparent;
   border-radius: 0.8rem;
   text-transform: capitalize;
   font-weight: 500;
@@ -317,7 +317,6 @@ input {
   margin: 0.35em 0;
   background-color: hsla(0, 0%, 20%, 0.907);
   cursor: pointer;
-  /* background: hsl(199, 42%, 22%); */
 }
 
 .buttonsSlice #submit {
@@ -330,7 +329,17 @@ input {
 }
 
 .buttonsSlice button:hover {
-background-color: hsla(0, 0%, 20%, 0.36);
+  border: 1px solid hsl(0, 0%, 96%);
+  outline: 0;
+  border-radius: 0.8rem;
+}
+
+.buttonsSlice button:focus-visible {
+  outline: none;
+}
+
+.buttonsSlice button.light-mode:hover {
+border: 1px solid transparent;
 }
 
 /* Search inputs slice*/
@@ -438,14 +447,14 @@ td {
 
 #topBtn{
   color: rgb(206, 158, 37);
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 800;
    position: fixed;
   left: 4%;
   bottom: 16%;
   background: rgba(234, 210, 210, 0.281);
- height: 2%;  
- width: 2%;
+ height: 3%;  
+ width: 3%;
  padding: 5px;
  border-radius: 50%;
  display: flex;
