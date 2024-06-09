@@ -1,4 +1,4 @@
-import { docElementsGetter, RowGenerator, GetPropertiesValue } from "./getElementsModule.js";
+import { docElementsGetter, RowGenerator } from "./getElementsModule.js";
 
 //  Destructuring the document elements from their module.
 const {

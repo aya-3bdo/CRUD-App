@@ -86,10 +86,10 @@ export class RowGenerator {
           <td > ${targetedArrayItem.discount + "%"}</td>
           <td > ${targetedArrayItem.priceOfOneItem}</td>
           <td ><button  class = ${className} id = ${
-        indx + 1
+        indx
       }>update</button></td>
          <td ><button   class = ${className} id = ${
-        indx + 1
+        indx
       }>delete</button></td>
         </tr>
          `;
