@@ -16,7 +16,7 @@ This is a simple CRUD (Create, Read, Update, Delete) application, built using Ja
        and update them.
   -  **Delete:** Users can remove items from the list directly or even through searching for them using the searching section and delete them.
   -  **Responsivness:** Responsive design for many different screens.
-  -  **Ligt & Dark mode:** You can switch between your prefered mode.
+  -  **Ligt & Dark mode:** You can switch between your preferred mode.
   -   **Minified Version:** A minified version of the app is available for faster loading times.
 
 ## Technologies Used
