@@ -9,7 +9,7 @@ This is a simple CRUD (Create, Read, Update, Delete) application, built using Ja
 ## Features:
 
   -  **Create:** Users can add new items to the table, including its brand, model, category, Price, Tax and Discount and item's count,
-    with a feature that you can add new brands and categories manualy by chosing `+another brand/ +another category option` from select list
+    with a feature that you can add new brands and categories manually by chosing `+another brand/ +another category option` from select list
      if any of them isn't available in the options.
   -  **Read:** Users can view the list of items with all their data, including the total price after calculating the tax and discount if existed.
   -  **Update:** Users can edit the details of an existing item directly or even through searching for them using the searching section
